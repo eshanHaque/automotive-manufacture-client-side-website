@@ -16,14 +16,7 @@
         "rate" : "5/5",
         "img": "https://i.ibb.co/zfyySsC/wiper2.jpg"
     },
-    {
-        "name": "Bonnet Axio",
-        "price": "$788",
-        "minQty" : "10",
-        "qty" : "400",
-        "rate" : "4/5",
-        "img": "https://i.ibb.co/pLgXQj1/car-Bonnet1.webp"
-    },
+    
     {
         "name": "Bonnet Prime",
         "price": "$699",
@@ -87,5 +80,13 @@
         "qty" : "800",
         "rate" : "4/5",
         "img": "https://i.ibb.co/tcV6P9M/mirror2.jpg"
+    },
+    {
+        "name": "Bonnet Axio",
+        "price": "$788",
+        "minQty" : "10",
+        "qty" : "400",
+        "rate" : "4/5",
+        "img": "https://i.ibb.co/pLgXQj1/car-Bonnet1.webp"
     }
 ]
