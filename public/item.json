@@ -5,6 +5,7 @@
         "price": "3100",
         "minQty" : "30",
         "qty" : "300",
+        "rate" : "4.5/5",
         "img": "https://i.ibb.co/ckMQZHJ/fullbody.jpg"
     },
     {
@@ -12,6 +13,7 @@
         "price": "$54",
         "minQty" : "20",
         "qty" : "500",
+        "rate" : "5/5",
         "img": "https://i.ibb.co/zfyySsC/wiper2.jpg"
     },
     {
@@ -19,6 +21,7 @@
         "price": "$788",
         "minQty" : "10",
         "qty" : "400",
+        "rate" : "4/5",
         "img": "https://i.ibb.co/pLgXQj1/car-Bonnet1.webp"
     },
     {
@@ -26,6 +29,7 @@
         "price": "$699",
         "minQty" : "20",
         "qty" : "900",
+        "rate" : "4.5/5",
         "img": "https://i.ibb.co/89D741R/car-Bonnet2.jpg"
     },
     {
@@ -33,6 +37,7 @@
         "price": "$999",
         "minQty" : "40",
         "qty" : "600",
+        "rate" : "4.2/5",
         "img": "https://i.ibb.co/T4wrtPZ/car-Bumper.jpg"
     },
     {
@@ -40,6 +45,7 @@
         "price": "$425",
         "minQty" : "20",
         "qty" : "700",
+        "rate" : "5/5",
         "img": "https://i.ibb.co/Htb2GWr/car-Bumper2.jpg"
     },
     {
@@ -47,6 +53,7 @@
         "price": "$365",
         "minQty" : "20",
         "qty" : "500",
+        "rate" : "4/5",
         "img": "https://i.ibb.co/31XyNFc/carDoor.jpg"
     },
     {
@@ -54,6 +61,7 @@
         "price": "$258",
         "minQty" : "60",
         "qty" : "500",
+        "rate" : "3/5",
         "img": "https://i.ibb.co/CthGMy8/carDoor2.jpg"
     },
     {
@@ -61,6 +69,7 @@
         "price": "$945",
         "minQty" : "60",
         "qty" : "900",
+        "rate" : "4/5",
         "img": "https://i.ibb.co/F45QCjR/windscreen1.jpg"
     },
     {
@@ -68,6 +77,7 @@
         "price": "$945",
         "minQty" : "60",
         "qty" : "700",
+        "rate" : "3.5/5",
         "img": "https://i.ibb.co/7yvMK3T/mirror3.jpg"
     },
     {
@@ -75,6 +85,7 @@
         "price": "$693",
         "minQty" : "40",
         "qty" : "800",
+        "rate" : "4/5",
         "img": "https://i.ibb.co/tcV6P9M/mirror2.jpg"
     }
 ]
