@@ -1,0 +1,80 @@
+[
+    {
+        "id" : "1",
+        "name": "Full Body",
+        "price": "3100",
+        "minQty" : "30",
+        "qty" : "300",
+        "img": "https://i.ibb.co/ckMQZHJ/fullbody.jpg"
+    },
+    {
+        "name": "Wiper",
+        "price": "$54",
+        "minQty" : "20",
+        "qty" : "500",
+        "img": "https://i.ibb.co/zfyySsC/wiper2.jpg"
+    },
+    {
+        "name": "Bonnet Axio",
+        "price": "$788",
+        "minQty" : "10",
+        "qty" : "400",
+        "img": "https://i.ibb.co/pLgXQj1/car-Bonnet1.webp"
+    },
+    {
+        "name": "Bonnet Prime",
+        "price": "$699",
+        "minQty" : "20",
+        "qty" : "900",
+        "img": "https://i.ibb.co/89D741R/car-Bonnet2.jpg"
+    },
+    {
+        "name": "Bumper",
+        "price": "$999",
+        "minQty" : "40",
+        "qty" : "600",
+        "img": "https://i.ibb.co/T4wrtPZ/car-Bumper.jpg"
+    },
+    {
+        "name": "Mate Bumper",
+        "price": "$425",
+        "minQty" : "20",
+        "qty" : "700",
+        "img": "https://i.ibb.co/Htb2GWr/car-Bumper2.jpg"
+    },
+    {
+        "name": "Door for Toyota",
+        "price": "$365",
+        "minQty" : "20",
+        "qty" : "500",
+        "img": "https://i.ibb.co/31XyNFc/carDoor.jpg"
+    },
+    {
+        "name": "Door For Corolla",
+        "price": "$258",
+        "minQty" : "60",
+        "qty" : "500",
+        "img": "https://i.ibb.co/CthGMy8/carDoor2.jpg"
+    },
+    {
+        "name": "Wind Screen",
+        "price": "$945",
+        "minQty" : "60",
+        "qty" : "900",
+        "img": "https://i.ibb.co/F45QCjR/windscreen1.jpg"
+    },
+    {
+        "name": "Inside Mirror",
+        "price": "$945",
+        "minQty" : "60",
+        "qty" : "700",
+        "img": "https://i.ibb.co/7yvMK3T/mirror3.jpg"
+    },
+    {
+        "name": "Side Mirror",
+        "price": "$693",
+        "minQty" : "40",
+        "qty" : "800",
+        "img": "https://i.ibb.co/tcV6P9M/mirror2.jpg"
+    }
+]
