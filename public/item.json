@@ -1,6 +1,5 @@
 [
     {
-        "id" : "1",
         "name": "Full Body",
         "price": "3100",
         "minQty" : "30",
