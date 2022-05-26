@@ -14,7 +14,7 @@ const Home = () => {
             <div className='p-5'>
                 <Products></Products>
             </div>
-            <footer className='mt-10 text-center mb-5'><Footer></Footer></footer>
+            
         </div>
     );
 };

@@ -4,7 +4,7 @@ import { useAuthState } from 'react-firebase-hooks/auth';
 import auth from '../../firebase.init';
 
 
-const Product = ({ product, setIsOrder }) => {
+const Product = ({ product }) => {
     const {_id, name, img, minQty, qty, price, rate } = product;
     const [user] = useAuthState(auth);
     const handlePurchase = event => {
@@ -36,7 +36,7 @@ const Product = ({ product, setIsOrder }) => {
     return (
         <div>
             <form onSubmit={handlePurchase}>
-                <div style={{ height: '600px' }} className="card w-96 bg-base-100 shadow-xl">
+                <div style={{ height: '600px' }} className="card w-96 bg-base-100 shadow-xl mb-10">
                     <figure><img src={img} alt="Shoes" /></figure>
                     <div className="card-body">
                         <h2 className="card-title">{name}</h2>

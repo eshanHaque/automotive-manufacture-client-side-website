@@ -4,7 +4,7 @@ const Order = ({order}) => {
     const {_id, productImg, productName, productPrice, userName, userEmail} = order;
     return (
         <div>
-            <div className="card w-96 bg-base-100 shadow-xl">
+            <div style={{ height: '500px' }} className="card w-96 bg-base-100 shadow-xl">
                             <figure className="px-10 pt-10">
                                 <img src={productImg} alt="orderImg" className="rounded-xl" />
                             </figure>
