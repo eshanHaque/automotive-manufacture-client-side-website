@@ -28,11 +28,8 @@ const Product = ({ product, setIsOrder }) => {
         })
         .then(res => res.json())
         .then(data =>{
-            if(data.success){
+            if(data){
                 toast(`You orderd, ${name}`)
-            }
-            else{
-                toast.error(`Already orderd ${data.order?.productName}`)
             }
         })
     }

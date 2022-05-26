@@ -22,7 +22,7 @@ const Products = () => {
                     ></Product>)
                 }
             </div>
-            {/* {isorder && <Myorder isorder={isorder}></Myorder>} */}
+           
         </div>
     );
 };
