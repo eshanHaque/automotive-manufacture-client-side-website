@@ -1,7 +1,7 @@
 import React from 'react';
 import { useSignInWithEmailAndPassword, useSignInWithGoogle } from 'react-firebase-hooks/auth';
 import { useForm } from 'react-hook-form';
-import { Link } from 'react-router-dom';
+import { Link, useLocation, useNavigate } from 'react-router-dom';
 import auth from '../../../firebase.init';
 import Loading from '../../Loading/Loading';
 
@@ -18,6 +18,9 @@ const Login = () => {
       ] = useSignInWithEmailAndPassword(auth);
 
     let signInError;
+    const navigate = useNavigate();
+    const location = useLocation();
+    let form = location.state?.from.pathname || "/";
 
     if(loading || glLoading){
         return <Loading></Loading>
@@ -28,7 +31,7 @@ const Login = () => {
     }
 
     if (glUser || user) {
-        console.log(glUser, user);
+        navigate(form, { replace: true});
     }
     const onSubmit = data => {
         console.log(data);
