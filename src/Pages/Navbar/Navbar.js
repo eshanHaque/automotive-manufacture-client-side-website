@@ -5,7 +5,7 @@ import { Link } from 'react-router-dom';
 import auth from '../../firebase.init';
 
 const Navbar = () => {
-    const [user, loading, error] = useAuthState(auth);
+    const [user] = useAuthState(auth);
 
     const logout = () => {
         signOut(auth);
@@ -14,8 +14,10 @@ const Navbar = () => {
     const menuList = <>
         <li><Link to='/home'>Home</Link></li>
         <li><Link to='/products'>products</Link></li>
-        <li><Link to='/myorder'>My orders</Link></li>
         <li><Link to='/blogs'>Blogs</Link></li>
+        {
+            user && <li><Link to='/dashboard'>Dashboard</Link></li>
+        }
         <li>{user ? <button onClick={logout} className='btn btn-ghost'>Sign Out</button> : <Link to='/login'>Log In</Link>}</li>
     </>
     return (
@@ -32,10 +34,15 @@ const Navbar = () => {
                     </div>
                     <a className="btn btn-ghost normal-case text-xl">Automotive Manufacturer</a>
                 </div>
-                <div className="navbar-end hidden lg:flex">
+                <div className="navbar-center hidden lg:flex">
                     <ul className="menu menu-horizontal p-0">
-                           {menuList}
+                        {menuList}
                     </ul>
+                </div>
+                <div className="navbar-end">
+                    <label tabIndex="1" for="my-drawer-2" className="btn btn-ghost lg:hidden">
+                        <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M4 6h16M4 12h8m-8 6h16" /></svg>
+                    </label>
                 </div>
             </div>
         </div>

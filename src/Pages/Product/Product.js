@@ -6,7 +6,7 @@ import auth from '../../firebase.init';
 
 const Product = ({ product, setIsOrder }) => {
     const {_id, name, img, minQty, qty, price, rate } = product;
-    const [user, loading, error] = useAuthState(auth);
+    const [user] = useAuthState(auth);
     const handlePurchase = event => {
         event.preventDefault();
 
