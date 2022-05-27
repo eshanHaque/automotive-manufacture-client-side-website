@@ -23,7 +23,7 @@ const SignUp = () => {
 
     const navigate = useNavigate();
 
-    let signInError;
+    let signInError; 
 
     if(loading || glLoading || updating){
         return <Loading></Loading>
@@ -34,7 +34,7 @@ const SignUp = () => {
     }
 
     if (token) {
-        navigate('/product');
+        navigate('/products');
     }
     const onSubmit = async data => {
         console.log(data);
