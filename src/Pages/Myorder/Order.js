@@ -1,7 +1,7 @@
 import React from 'react';
 
 const Order = ({order}) => {
-    const {_id, productImg, productName, productPrice, userName, userEmail} = order;
+    const { productImg, productName, productPrice, userName, userEmail} = order;
     return (
         <div>
             <div style={{ height: '500px' }} className="card w-96 bg-base-100 shadow-xl">

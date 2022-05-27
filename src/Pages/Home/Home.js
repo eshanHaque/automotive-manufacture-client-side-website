@@ -1,6 +1,5 @@
 import React from 'react';
 import Banner from '../Banner/Banner';
-import Footer from '../Footer/Footer';
 import Products from '../Products/Products';
 
 const Home = () => {
@@ -14,7 +13,7 @@ const Home = () => {
             <div className='p-5'>
                 <Products></Products>
             </div>
-            
+
         </div>
     );
 };
