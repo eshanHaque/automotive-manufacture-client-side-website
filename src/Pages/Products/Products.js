@@ -6,7 +6,7 @@ const Products = () => {
     const [isorder, setIsOrder] = useState(null);
 
     useEffect(() =>{
-        fetch('http://localhost:5000/product')
+        fetch('https://infinite-ridge-15899.herokuapp.com/product')
         .then(res => res.json())
         .then(data => setProducts(data));
     }, [])

@@ -49,7 +49,7 @@ const SignUp = () => {
                     <h2 className='text-center text-2xl font-bold'>Sign Up</h2>
                     <form onSubmit={handleSubmit(onSubmit)}>
 
-                        {/* Pass feild */}
+                        {/* Name feild */}
                         <div className="form-control w-full max-w-xs">
                             <label className="label">
                                 <span className="label-text">Name</span>

@@ -15,6 +15,8 @@ import Myreview from './Pages/Myreview/Myreview';
 import Footer from './Pages/Footer/Footer';
 import Users from './Pages/Dashboard/Users';
 import MyProfile from './Pages/Dashboard/MyProfile';
+import AddProduct from './Pages/Dashboard/AddProduct';
+
 
 function App() {
   return (
@@ -31,6 +33,7 @@ function App() {
           <Route path="myreview" element={<Myreview></Myreview>}></Route>
           <Route path="myprofile" element={<MyProfile></MyProfile>}></Route>
           <Route path="users" element={<Users></Users>}></Route>
+          <Route path="addProduct" element={<AddProduct></AddProduct>}></Route>
         </Route>
         <Route path="/blogs" element={<Blogs />} />
         <Route path="/login" element={<Login />} />

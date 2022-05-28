@@ -1,9 +1,10 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import { useSignInWithEmailAndPassword, useSignInWithGoogle } from 'react-firebase-hooks/auth';
 import { useForm } from 'react-hook-form';
 import { Link, useLocation, useNavigate } from 'react-router-dom';
 import auth from '../../../firebase.init';
 import Loading from '../../Loading/Loading';
+import useToken from '../../../hooks/useToken';
 
 const Login = () => {
     const [signInWithGoogle, glUser, glLoading, glError] = useSignInWithGoogle(auth);
@@ -15,24 +16,30 @@ const Login = () => {
         user,
         loading,
         error,
-      ] = useSignInWithEmailAndPassword(auth);
+    ] = useSignInWithEmailAndPassword(auth);
+
+    const [token] = useToken(user || glUser);
 
     let signInError;
     const navigate = useNavigate();
     const location = useLocation();
     let form = location.state?.from.pathname || "/";
 
-    if(loading || glLoading){
+    useEffect(() => {
+        if (token) {
+            navigate(form, { replace: true });
+        }
+    }, [token, form, navigate])
+
+    if (loading || glLoading) {
         return <Loading></Loading>
     }
- 
-    if(error || glError){
-        signInError= <p className='text-orange-700'>{ error?.message || glError?.message }</p>
+
+    if (error || glError) {
+        signInError = <p className='text-orange-700'>{error?.message || glError?.message}</p>
     }
 
-    if (glUser || user) {
-        navigate(form, { replace: true});
-    }
+
     const onSubmit = data => {
         console.log(data);
         signInWithEmailAndPassword(data.email, data.password);
