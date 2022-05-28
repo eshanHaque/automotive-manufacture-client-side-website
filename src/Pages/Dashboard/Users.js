@@ -12,8 +12,8 @@ const Users = () => {
     return (
         <div>
             <h1>There are  {users.length} Users</h1>
-            <div class="overflow-x-auto">
-                <table class="table w-full">
+            <div className="overflow-x-auto">
+                <table className="table w-full">
                     <thead>
                         <tr>
                             <th>Email</th>

@@ -1,6 +1,8 @@
 import React from 'react';
 import Banner from '../Banner/Banner';
+import Myreview from '../Myreview/Myreview';
 import Products from '../Products/Products';
+import Summery from './Summery';
 
 const Home = () => {
     return (
@@ -13,7 +15,10 @@ const Home = () => {
             <div className='p-5'>
                 <Products></Products>
             </div>
-
+            <h3 className='text-center  text-violet-900 text-3xl font-black mt-15 mb-15'>We Got!</h3>
+            <Summery></Summery>
+            <h3 className='text-center  text-blue-300 text-2xl font-black mt-15 mb-15'>Our Customer Review</h3>
+            <Myreview></Myreview>
         </div>
     );
 };

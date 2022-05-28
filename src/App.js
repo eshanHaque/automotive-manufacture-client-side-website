@@ -16,6 +16,8 @@ import Footer from './Pages/Footer/Footer';
 import Users from './Pages/Dashboard/Users';
 import MyProfile from './Pages/Dashboard/MyProfile';
 import AddProduct from './Pages/Dashboard/AddProduct';
+import ManageAllProduct from './Pages/Dashboard/ManageAllProduct';
+import Payment from './Pages/Dashboard/Payment';
 
 
 function App() {
@@ -31,9 +33,11 @@ function App() {
         <Route path="dashboard" element={<RequireAuth><Dashboard /></RequireAuth>}>
           <Route index element={<Myorder></Myorder>}></Route>
           <Route path="myreview" element={<Myreview></Myreview>}></Route>
-          <Route path="myprofile" element={<MyProfile></MyProfile>}></Route>
+          <Route path="myProfile" element={<MyProfile></MyProfile>}></Route>
+          <Route path="payment/:id" element={<Payment></Payment>}></Route>
           <Route path="users" element={<Users></Users>}></Route>
           <Route path="addProduct" element={<AddProduct></AddProduct>}></Route>
+          <Route path="manageAllProduct" element={<ManageAllProduct></ManageAllProduct>}></Route>
         </Route>
         <Route path="/blogs" element={<Blogs />} />
         <Route path="/login" element={<Login />} />

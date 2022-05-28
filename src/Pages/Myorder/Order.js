@@ -1,7 +1,8 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 
 const Order = ({order}) => {
-    const { productImg, productName, productPrice, userName, userEmail} = order;
+    const {_id, productImg, productName, productPrice, userName, userEmail, paid} = order;
     return (
         <div>
             <div style={{ height: '500px' }} className="card w-96 bg-base-100 shadow-xl">
@@ -14,7 +15,8 @@ const Order = ({order}) => {
                                 <p>Your Name: {userName}</p>
                                 <p>Your Email: {userEmail}</p>
                                 <div className="card-actions">
-                                    <button className="btn btn-primary">Pay</button>
+                                    {(productPrice && !paid) && <Link to={`/dashboard/payment/${_id}`}><button className='btn btn-xs btn-success'>Pay</button></Link>}
+                                    {(productPrice && paid) && <span className='text-success'>Paid</span>}
                                 </div>
                             </div>
                         </div>

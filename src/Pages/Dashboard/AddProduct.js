@@ -7,7 +7,7 @@ import Loading from '../Loading/Loading';
 const AddProduct = () => {
 
     const { register, formState: { errors }, handleSubmit, reset } = useForm();
-    const { data: products, isLoading } = useQuery('products', () => fetch('http://localhost:5000/product').then(res => res.json()));
+    const { data: products, isLoading } = useQuery('products', () => fetch('https://infinite-ridge-15899.herokuapp.com/products').then(res => res.json()));
     const imgStorageKey = '479baa967ba9e976fa75e8de4ef96d5c';
 
 
@@ -31,7 +31,7 @@ const AddProduct = () => {
                         minQty: data.minQty,
                         img: img
                     }
-                    fetch('http://localhost:5000/product', {
+                    fetch('https://infinite-ridge-15899.herokuapp.com/product', {
                         method: 'POST',
                         headers: {
                             'content-type': 'application/json',
@@ -41,13 +41,13 @@ const AddProduct = () => {
                     })
                     .then(res=>res.json())
                     .then(inserted => {
-                        if(inserted.insertedID){
+                        if(inserted.insertedId){
                             toast.success('You added a product')
-                            toast();
+                            reset();
                         }
-                        else{
-                            toast.error('Failed to add a product')
-                        }
+                        else(
+                            toast.error('Failed to add a Product')
+                        )
                     })
                 }
             })
